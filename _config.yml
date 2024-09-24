@@ -1,4 +1,11 @@
 theme: minima
+minima: 
+  include_nav: true
+nav: 
+  - title: "Home"
+    url: "/"
+  - title: "Assignment 2"
+    url: "/Assignment2/"
 title: Project group - Data Analysis 1
 description: This is our personal website created to show our project.
 header_pages:
