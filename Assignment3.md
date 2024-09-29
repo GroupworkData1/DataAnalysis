@@ -16,12 +16,16 @@ names = ["rating", 'review_count', 'isbn', 'booktype','author_url', 'year', 'gen
 data.columns = names
 
 display(data.head())
+```
 
 # Exercise 2
+```python
 subset = data[['rating', 'isbn', 'author_url', 'year', 'genre_urls', 'name']]
 display(subset.head())
+```
 
 # Exercise 3
+```python
 #Here the missing values are counted per column.
 print(subset.isna().sum())
 
@@ -35,8 +39,10 @@ subset.loc[subset.year.isnull(), 'year'] = 'unknown'
 
 #The column author_url will be changed to a string to help with the following exercise.
 subset.loc[:, 'author_url'] = subset.author_url.astype(str)
+```
 
 # Exercise 4
+```python
 #This creates the new author column from the author_url column
 subset['author'] = subset['author_url'].str.split('/').str[-1].str.split('.').str[-1]
 
@@ -48,12 +54,15 @@ summary = sorted.groupby('year').agg(
     number_of_books = ('author', 'count'),
     lowest_rating = ('rating', 'min'),
     highest_rating = ('rating', 'min'))
-
+```
 
 # Exercise 5
+```python
 sorted.to_csv("data/hw03-cleand.csv", index=False, header=True)
+```
 
 # Exercise 6
+```python
 clean = pd.read_csv('data/cleaned-goodreads.csv')
 
 #Here the correlation coefficient is calculated. There is a little bit of a negative correlation
@@ -67,16 +76,17 @@ sns.scatterplot(x='rating', y='review_count', data=clean);
 #A book rating is very subjective. When only a few people vote, the vote will represent the opinion of only a few people.
 #However, when lots of people vote, the vote will become more of a mean of all the opinions.
 #It can be seen that the scatterplot looks a bit like the shape of a normal distribution.
-
+```
 ![A description of the image](photos/3.1.png)
 
 
 # Exercise 7
+```python
 print(f'The mean of all the ratings is: {clean.rating.mean():.4f}')
 print(f'The median of all the ratings is: {clean.rating.median()}')
 print(f'The standard deviation of all the ratings is: {clean.rating.std():.4f}')
 print(f'The range of all the ratings is between {clean.rating.min()} and {clean.rating.max()}')
 
 clean.boxplot('rating');
-
+```
 ![A description of the image](photos/3.2.png)
