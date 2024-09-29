@@ -17,6 +17,7 @@ data.columns = names
 
 display(data.head())
 {% endhighlight %}
+hi
 
 # Exercise 2
 ```python
