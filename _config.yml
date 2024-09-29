@@ -4,11 +4,11 @@ minima:
 nav: 
   - title: "Home"
     url: "/"
-  - title: "A2"
+  - title: "Assignment 2"
     url: "/Assignment2/" 
-  - title: "A3"
+  - title: "Assignment 3"
     url: "/Assignment3/"
-  - title: "A4"
+  - title: "Assignment 4"
     url: "/Assignment4/"
 title: Project group - Data Analysis 1
 description: This is our personal website created to show our project.
