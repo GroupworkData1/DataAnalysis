@@ -5,7 +5,7 @@ permalink: /Assignment3/
 ---
 
 # Exercise 1
-```python
+{% highlight python %}
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -16,7 +16,7 @@ names = ["rating", 'review_count', 'isbn', 'booktype','author_url', 'year', 'gen
 data.columns = names
 
 display(data.head())
-```
+{% endhighlight %}
 
 # Exercise 2
 ```python
