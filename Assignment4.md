@@ -25,6 +25,7 @@ from geopy.geocoders import Nominatim
 # Exercise 1
 ```python
 ## Veerle
+
 def create_contiguity_weights(df):
     Weights = weights.Queen.from_dataframe(df, use_index=False)   # This costructs the Queen contiguity-based spatial weight matrix
     return Weights
@@ -138,6 +139,8 @@ create_distance_weights(df, 1000)                                       # testin
 
 # Exercise 5
 ```python
+## Gina
+
 def plot_moran(W, y):
     # Standardize the attribute array y
     y_standardized = (y - np.mean(y)) / np.std(y)
