@@ -28,3 +28,4 @@ permalink: /Assignment4/
 ```python
 
 ```
+![The Moran plot](photos/4.1.png)
