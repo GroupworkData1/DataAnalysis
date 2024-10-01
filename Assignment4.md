@@ -8,3 +8,23 @@ permalink: /Assignment4/
 ```python
 
 ```
+
+# Exercise 2
+```python
+
+```
+
+# Exercise 3
+```python
+
+```
+
+# Exercise 4
+```python
+
+```
+
+# Exercise 5
+```python
+
+```
