@@ -10,5 +10,7 @@ nav:
     url: "/Assignment3/"
   - title: "Assignment 4"
     url: "/Assignment4/"
+  - title: "Hackathon"
+    url: "/Hackathon/"  
 title: Project group - Data Analysis 1
 description: This is our personal website created to show our project.
