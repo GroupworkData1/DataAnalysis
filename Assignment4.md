@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Assignment 4"
+title: "A4"
 permalink: /A4/
 ---
 
