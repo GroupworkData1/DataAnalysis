@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "A4"
-permalink: /A4/
+title: "Assignment 4"
+permalink: /Assignment 4/
 ---
 
 ```python
