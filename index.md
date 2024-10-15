@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+title: Hackathon!
 ---
 
 # Welcome to our website!
